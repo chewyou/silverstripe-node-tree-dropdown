@@ -4,6 +4,7 @@ namespace Chewyou\NodeTreeDropdown;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;
+use SilverStripe\CMS\Model\SiteTree;
 
 class NodeTreeController extends Controller {
 

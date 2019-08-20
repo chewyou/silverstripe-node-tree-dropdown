@@ -4,13 +4,3 @@ Name: nodetree-config
 Page:
   extensions:
     - Chewyou\NodeTreeDropdown\PageExtension
-
----
-Name: nodetree-route
-After:
-  - '#rootroutes'
-  - '#coreroutes'
----
-SilverStripe\Control\Director:
-  rules:
-    'api/nodetree//$Action': 'Chewyou\NodeTreeDropdown\NodeTreeController'

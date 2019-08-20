@@ -18,7 +18,7 @@
         $('.js-node-tree-container').addClass('lds-dual-ring');
         var pageID = getPageID();
         if (pageID) {
-            var url = '/api/nodetree/getTreeData?pageID=' + pageID;
+            var url = 'api/nodetree/getTreeData?pageID=' + pageID;
             requestData(url);
         }
     }
