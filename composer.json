@@ -1,0 +1,31 @@
+{
+  "name": "chewyou/silverstripe-node-tree-dropdown",
+  "description": "Node Tree Dropdown for SilverStripe",
+  "type": "silverstripe-vendormodule",
+  "licence": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Ben Pickett",
+      "email": "app.benspickett@gmail.com"
+    }
+  ],
+  "keywords": [
+    "silverstripe",
+    "nodetree",
+    "node",
+    "tree",
+    "dropdown"
+  ],
+  "require-dev": {
+    "phpunit/PHPUnit": "^5.7"
+  },
+  "require": {
+    "silverstripe/cms": ">=4.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": "phpcs src/ tests/",
+    "lint-clean": "phpcbf src/ tests/"
+  }
+}

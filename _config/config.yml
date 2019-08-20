@@ -1,0 +1,19 @@
+---
+Name: nodetreedropdown
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - dist/css/jquery.treeSelector.css
+  extra_requirements_javascript:
+    - dist/js/lib/jquery.treeSelector.js
+    - dist/js/node-tree-dropdown.jscss
+
+---
+Name: approutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    'api/nodetree//$Action': 'Chewyou\NodeTreeDropdown\NodeTreeController'
