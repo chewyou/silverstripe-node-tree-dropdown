@@ -1,6 +1,6 @@
 {
   "name": "chewyou/silverstripe-node-tree-dropdown",
-  "type": "module",
+  "type": "silverstripe-vendormodule",
   "description": "Node Tree Dropdown for SilverStripe",
   "keywords": [
     "silverstripe",
