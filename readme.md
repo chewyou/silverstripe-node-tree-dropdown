@@ -12,6 +12,7 @@ This repo is in beta and code is still being written and tested
 `composer require chewyou/silverstripe-node-tree-dropdown`
 
 ## Use
+`HiddenField::create('SelectedNodes', 'SelectedNodes')->addExtraClass('selected-nodes'),`
 `NodeTreeDropdownField::create('NodeTreeDropdown', $PageID)` 
 
 where `$PageID` is the parent page wanted to display its children

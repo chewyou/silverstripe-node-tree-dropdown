@@ -49,7 +49,7 @@
 
     function makeDropdownTree(rootNode, selected) {
         $('.js-node-tree-container').treeSelector(rootNode, selected, function (e, values) {
-            $('.services-value-list').val(values.toString());
+            $('.selected-nodes').val(values.toString());
         }, {
             checkWithParent: true,                // children checked/unchecked if true
             titleWithParent: false,               // title with 'title1 - title 2' if true

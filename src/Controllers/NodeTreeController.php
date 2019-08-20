@@ -17,10 +17,14 @@ class NodeTreeController extends Controller {
 
     public function getTreeData(HTTPRequest $request) {
         $pageID = $request->getVar('pageID');
-
         $page = SiteTree::get_by_id($pageID);
-
         $children = $page->Children();
+
+        $selected = [];
+        if ($page) {
+            $pageSelected = $page->SelectedNodes;
+            $selected = explode(',', $pageSelected);
+        }
 
         $childrenArray = [];
         if ($children) {
@@ -35,7 +39,7 @@ class NodeTreeController extends Controller {
             }
         }
 
-        return json_encode(["tree" => $childrenArray, "selected" => []]);
+        return json_encode(["tree" => $childrenArray, "selected" => $selected]);
     }
 
     private function getChildren($pageID) {
