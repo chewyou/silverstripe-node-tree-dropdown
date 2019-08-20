@@ -48,7 +48,7 @@ In the `routes.yml` file, add:
      'api/nodetree//$Action': 'Chewyou\NodeTreeDropdown\NodeTreeController'
 ```
 
-## Use
+## Usage
 ```php
 use Chewyou\NodeTreeDropdown\NodeTreeDropdownField;
 use SilverStripe\Forms\HiddenField;
