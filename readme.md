@@ -1,5 +1,8 @@
 # Silverstripe Node Tree Dropdown
 
+### Note
+This repo is in beta and code is still being written and tested
+
 ## Requirements 
 
 - SilverStripe 4+
