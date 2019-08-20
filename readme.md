@@ -7,17 +7,17 @@ structure dropdown view.
 Much like the 'Batch Actions' view in the CMS.
 
 ## Requirements 
-- SilverStripe 4+
-- PHP 7+
+  - SilverStripe 4+
+  - PHP 7+
 
 ## Screenshots
-#### Closed with selections made
+### Closed with selections made
 ![Closed with selections made](https://github.com/chewyou/silverstripe-node-tree-dropdown/blob/master/images/screenshots/closed-with-selections.PNG)
-#### Open with selections made
+### Open with selections made
 ![Open with selections made](https://github.com/chewyou/silverstripe-node-tree-dropdown/blob/master/images/screenshots/open-with-selections.PNG)
 
 ## Installation
-#### Composer
+### Composer
 `composer require chewyou/silverstripe-node-tree-dropdown`
 
 You may need to add the repository to the `repositories` list in composer.json
@@ -27,7 +27,7 @@ and add
 
 manually. Then run `composer update`
 
-```
+```json
 "repositories": [
         {
             "type": "vcs",
@@ -68,6 +68,6 @@ where `PageID` is the parent page wanted to display its children as a node tree
 e.g The below shows the parent and its children. Use the Parents ID in the 
 NodeTreeDropdownField to show its two children (and its children, if any)
 
-- Parent ($PageID)
-  - Child
-  - Child
+  - Parent ($PageID)
+    - Child
+    - Child
