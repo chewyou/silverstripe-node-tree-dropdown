@@ -12,9 +12,9 @@ Much like the 'Batch Actions' view in the CMS.
 
 ## Screenshots
 #### Closed with selections made
-![Closed with selections made](/images/screenshots/closed-with-selections.png?raw=true)
+![Closed with selections made](https://github.com/chewyou/silverstripe-node-tree-dropdown/blob/master/images/screenshots/closed-with-selections.PNG)
 #### Open with selections made
-![Open with selections made](/images/screenshots/open-with-selections.png?raw=true)
+![Open with selections made](https://github.com/chewyou/silverstripe-node-tree-dropdown/blob/master/images/screenshots/open-with-selections.PNG)
 
 ## Installation
 #### Composer
