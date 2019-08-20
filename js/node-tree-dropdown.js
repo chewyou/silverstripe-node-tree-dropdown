@@ -2,17 +2,21 @@
 
     var loaded = "";
 
-    function getNodeValues() {
-        $(".js-node-tree-container").addClass("lds-dual-ring");
-        var pageID = getPageID();
-        if (pageID) {
-            var url = "api/nodetree/getTreeData?pageID=" + pageID;
-            requestData(url);
-        }
-    }
-
     function getPageID() {
         return $(".js-node-tree-container").data("id");
+    }
+
+    function makeDropdownTree(rootNode, selected) {
+        $(".js-node-tree-container").treeSelector(rootNode, selected, function (e, values) {
+            $(".selected-nodes").val(values.toString());
+        }, {
+            checkWithParent: true,                // children checked/unchecked if true
+            titleWithParent: false,               // title with 'title1 - title 2' if true
+            notViewClickParentTitle: false,       // when item click, only view leaf title if true
+            disabled: false,                      // disable the plugin
+            emptyOptionPlaceholder: "no options", // placeholder if empty
+            showToggles: false                    // Show or hide toggles
+        });
     }
 
     function requestData(url) {
@@ -35,17 +39,13 @@
             });
     }
 
-    function makeDropdownTree(rootNode, selected) {
-        $(".js-node-tree-container").treeSelector(rootNode, selected, function (e, values) {
-            $(".selected-nodes").val(values.toString());
-        }, {
-            checkWithParent: true,                // children checked/unchecked if true
-            titleWithParent: false,               // title with 'title1 - title 2' if true
-            notViewClickParentTitle: false,       // when item click, only view leaf title if true
-            disabled: false,                      // disable the plugin
-            emptyOptionPlaceholder: "no options", // placeholder if empty
-            showToggles: false                    // Show or hide toggles
-        });
+    function getNodeValues() {
+        $(".js-node-tree-container").addClass("lds-dual-ring");
+        var pageID = getPageID();
+        if (pageID) {
+            var url = "api/nodetree/getTreeData?pageID=" + pageID;
+            requestData(url);
+        }
     }
 
     $(document).ready(function () {
