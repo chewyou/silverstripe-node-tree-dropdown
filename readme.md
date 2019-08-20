@@ -37,7 +37,7 @@ manually. Then run `composer update`
 ```
 
 ## Configuration
-In the `routes.yml` file, add:
+In your `_config/routes.yml` file (if existing, otherwise create the file), add:
 ```yaml
 
 ---
