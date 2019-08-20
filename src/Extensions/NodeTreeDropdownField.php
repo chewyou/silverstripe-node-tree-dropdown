@@ -15,7 +15,7 @@ class NodeTreeDropdownField extends LiteralField {
         Requirements::javascript(NODE_TREE_DIR . '/js/lib/jquery.treeSelector.js');
 
         // Module
-        Requirements::css(NODE_TREE_DIR . '/js/node-tree-dropdown.js');
+        Requirements::css(NODE_TREE_DIR . '/js/node-tree-dropdown.min.js');
 
         Requirements::set_force_js_to_bottom(true);
 
