@@ -20,9 +20,22 @@ Much like the 'Batch Actions' view in the CMS.
 #### Composer
 `composer require chewyou/silverstripe-node-tree-dropdown`
 
+You may need to add the repository to the `repositories` list in composer.json
+and add `"chewyou/silverstripe-node-tree-dropdown": "dev-master"` manually. 
+Then run `composer update`
+
+```
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/chewyou/silverstripe-node-tree-dropdown.git"
+        }
+    ],
+```
+
 ## Configuration
 In the `routes.yml` file, add:
-```
+```yaml
 
 ---
  Name: nodetree-route
@@ -36,7 +49,7 @@ In the `routes.yml` file, add:
 ```
 
 ## Use
-```
+```php
 use Chewyou\NodeTreeDropdown\NodeTreeDropdownField;
 use SilverStripe\Forms\HiddenField;
 .
