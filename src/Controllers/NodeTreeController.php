@@ -53,7 +53,7 @@ class NodeTreeController extends Controller {
                     "id" => $child->ID,
                     "title" => $child->Title,
                     "value" => $child->ID,
-                    "children" => $this->getChildren($child->ID)
+                    "children" => $this->getChildren($child)
                 ];
                 array_push($childrenArray, $childTemp);
             }
