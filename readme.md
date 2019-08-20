@@ -21,8 +21,11 @@ Much like the 'Batch Actions' view in the CMS.
 `composer require chewyou/silverstripe-node-tree-dropdown`
 
 You may need to add the repository to the `repositories` list in composer.json
-and add `"chewyou/silverstripe-node-tree-dropdown": "dev-master"` manually. 
-Then run `composer update`
+and add 
+
+`"chewyou/silverstripe-node-tree-dropdown": "dev-master"` 
+
+manually. Then run `composer update`
 
 ```
 "repositories": [
