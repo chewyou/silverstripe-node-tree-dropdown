@@ -7,8 +7,8 @@ structure dropdown view.
 Much like the 'Batch Actions' view in the CMS.
 
 ## Requirements 
-  - SilverStripe 4+
-  - PHP 7+
+* SilverStripe 4+
+* PHP 7+
 
 ## Screenshots
 ### Closed with selections made
@@ -68,6 +68,6 @@ where `PageID` is the parent page wanted to display its children as a node tree
 e.g The below shows the parent and its children. Use the Parents ID in the 
 NodeTreeDropdownField to show its two children (and its children, if any)
 
-  - Parent ($PageID)
-    - Child
-    - Child
+* Parent ($PageID)
+    * Child
+    * Child

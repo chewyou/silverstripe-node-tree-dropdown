@@ -34,7 +34,7 @@ class NodeTreeController extends Controller {
                     "id" => $child->ID,
                     "title" => $child->Title,
                     "value" => $child->ID,
-                    "children" => $this->getChildren($child->ID)
+                    "children" => $this->getChildren($child)
                 ];
                 array_push($childrenArray, $childTemp);
             }
@@ -43,12 +43,10 @@ class NodeTreeController extends Controller {
         return json_encode(["tree" => $childrenArray, "selected" => $selected]);
     }
 
-    private function getChildren($pageID) {
-        $page = SiteTree::get_by_id($pageID);
-
+    private function getChildren($page) {
         $children = $page->Children();
-
         $childrenArray = [];
+
         if ($children) {
             foreach ($children as $child) {
                 $childTemp = [
