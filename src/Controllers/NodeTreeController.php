@@ -19,6 +19,11 @@ class NodeTreeController extends Controller {
     public function getTreeData(HTTPRequest $request) {
         $pageID = $request->getVar('pageID');
         $page = SiteTree::get_by_id($pageID);
+
+        if (!$page) {
+            return json_encode(["tree" => [], "selected" => []]);
+        }
+
         $children = $page->Children();
 
         $selected = [];
