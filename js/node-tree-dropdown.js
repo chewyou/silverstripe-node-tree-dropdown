@@ -14,7 +14,7 @@
             titleWithParent: false,               // title with 'title1 - title 2' if true
             notViewClickParentTitle: false,       // when item click, only view leaf title if true
             disabled: false,                      // disable the plugin
-            emptyOptionPlaceholder: "no options", // placeholder if empty
+            emptyOptionPlaceholder: "No Options", // placeholder if empty
             showToggles: false                    // Show or hide toggles
         });
     }

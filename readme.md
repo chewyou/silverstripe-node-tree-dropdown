@@ -30,7 +30,8 @@ and add
 manually. Then run `composer update`
 
 ```json
-"repositories": [
+"repositories": 
+    [
         {
             "type": "vcs",
             "url": "https://github.com/chewyou/silverstripe-node-tree-dropdown.git"
