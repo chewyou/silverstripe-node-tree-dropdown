@@ -2,6 +2,8 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a0182f5bc454acb80afc65cd6ee0537)](https://app.codacy.com/app/benspickett/silverstripe-node-tree-dropdown?utm_source=github.com&utm_medium=referral&utm_content=chewyou/silverstripe-node-tree-dropdown&utm_campaign=Badge_Grade_Dashboard)
 
+[![CircleCI](https://circleci.com/gh/chewyou/silverstripe-node-tree-dropdown.svg?style=svg)](https://circleci.com/gh/chewyou/silverstripe-node-tree-dropdown)
+
 ## Synopsis
 A Node Tree Dropdown extension for the Silverstripe CMS. 
 Allows users to select page 'nodes' from a simple to use file-like 
