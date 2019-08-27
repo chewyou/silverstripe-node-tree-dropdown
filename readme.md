@@ -79,3 +79,4 @@ NodeTreeDropdownField to show its two children (and its children, if any)
 ## Future work
 * Enable/Disable node toggles in CMS Site Settings/YAML file to collapse nodes, hiding their children (for large site trees)
 * Update theme - especially the checkboxes
+* Remove the use of the HiddenField in favour of accessing the item ID's a different way
