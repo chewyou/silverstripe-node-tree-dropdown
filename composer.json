@@ -7,7 +7,9 @@
     "nodetree",
     "node",
     "tree",
-    "dropdown"
+    "dropdown",
+    "CMS",
+    "module"
   ],
   "homepage": "https://github.com/chewyou/silverstripe-node-tree-dropdown",
   "license": "BSD-3-Clause",
