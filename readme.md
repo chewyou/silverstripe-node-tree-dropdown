@@ -10,8 +10,8 @@ structure dropdown view.
 Much like the 'Batch Actions' view in the CMS.
 
 ## Requirements 
-* SilverStripe 4+
-* PHP 7+
+*  SilverStripe 4+
+*  PHP 7+
 
 ## Screenshots
 ### Closed with selections made
