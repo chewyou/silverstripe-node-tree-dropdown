@@ -67,7 +67,7 @@ $fields->addFieldsToTab('Root.NodeTree', [
     NodeTreeDropdownField::create('NodeTreeDropdown', {{PageID}})
 ]);
 ```
-where `PageID` is the parent page wanted to display its children as a node tree
+where `PageID` is the parent page ID as to display its children as a node tree
 
 e.g The below shows the parent and its children. Use the Parents ID in the 
 NodeTreeDropdownField to show its two children (and its children, if any)
